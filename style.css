@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat'); 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'); 
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}  
+.box{
+    max-width: 700px;
+    padding: 3rem 5rem;
+    background-color: #3863E0;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+/* .textimonial{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5rem auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+} */
+.testimonial {
+    text-align: justify;
+    line-height: 28px;
+}
+.user-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: block;
+    object-fit: cover;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details{
+    margin-left: 0.5rem;
+}
+.details p{
+    margin: 0;
+}
+.details .role{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    font-weight: normal;
+}
+.progress{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    animation: progressing 5s linear infinite;
+}
+.fas{
+    font-size: 2rem;
+    opacity: 0.3;
+    position: absolute;
+    left: 2.5rem;
+    top: 4rem;
+}
+i.rotated{
+    transform: rotate(180deg);
+    right: 2.5rem;
+
+}
+@media (max-width: 700px) {
+    .box{
+        padding: 2rem;
+    }
+    .fas{
+        display: none;
+    }
+}
+@keyframes progressing {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
